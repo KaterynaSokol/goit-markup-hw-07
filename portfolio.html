@@ -22,104 +22,89 @@
             ><span class="web">web</span>studio</a
           >
           <button
-              class="menu-toggle js-open-menu"
-              aria-expanded="false"
-              aria-controls="mobile-menu"
-            >
-              <svg class="menu-svg">
-                <use href="./images/symbol-defs.svg#icon-burger"></use>              
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="menu-svg">
+              <use href="./images/symbol-defs.svg#icon-burger"></use>
+            </svg>
+          </button>
+          <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+              <svg class="close-menu">
+                <use href="./images/symbol-defs.svg#icon-close"></use>
               </svg>
             </button>
-            <div class="menu-container js-menu-container" id="mobile-menu">
-              <button class="menu-toggle js-close-menu">
-                <svg class="close-menu">
-                  <use href="./images/symbol-defs.svg#icon-close"></use>
-                </svg>
-              </button>
-          <ul class="menu list">
-            <li>
-              <a class="menu-item link " href="./index.html">Studio</a>
-            </li>
-            <li>
-              <a class="menu-item link current-page" href="./portfolio.html"
-                >Portfolio</a
-              >
-            </li>
-            <li>
-              <a class="menu-item link" href="">Contacts</a>
-            </li>
-            
-          </ul>
-          <div class="contacts-mobile">
-              <ul class="mobile-contact list">            
-            <li>
-              <a class="contact mobile-tel link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-            <li>
-              <a class="contact mobile-mail link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-          <ul class=" social-mobile list">
-                  <li class="social-media-item">
-                    <a href="" class="social-link">
-                      <svg class="svg-social-media">
-                        <use
-                          href="./images/symbol-defs.svg#icon-instagram-1"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-media-item">
-                    <a href="" class="social-link">
-                      <svg class="svg-social-media">
-                        <use
-                          href="./images/symbol-defs.svg#icon-twitter-1"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-media-item">
-                    <a href="" class="social-link">
-                      <svg class="svg-social-media">
-                        <use
-                          href="./images/symbol-defs.svg#icon-facebook-1"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-media-item">
-                    <a href="" class="social-link">
-                      <svg class="svg-social-media">
-                        <use
-                          href="./images/symbol-defs.svg#icon-linkedin-1"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
+            <ul class="menu list">
+              <li>
+                <a class="menu-item link" href="./index.html">Studio</a>
+              </li>
+              <li>
+                <a class="menu-item link current-page" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a class="menu-item link" href="">Contacts</a>
+              </li>
+            </ul>
+            <div class="contacts-mobile">
+              <ul class="mobile-contact list">
+                <li>
+                  <a class="contact mobile-tel link" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="contact mobile-mail link"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="social-mobile list">
+                <li class="social-media-item">
+                  <a href="" class="social-link">
+                    <svg class="svg-social-media">
+                      <use
+                        href="./images/symbol-defs.svg#icon-instagram-1"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media-item">
+                  <a href="" class="social-link">
+                    <svg class="svg-social-media">
+                      <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media-item">
+                  <a href="" class="social-link">
+                    <svg class="svg-social-media">
+                      <use
+                        href="./images/symbol-defs.svg#icon-facebook-1"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media-item">
+                  <a href="" class="social-link">
+                    <svg class="svg-social-media">
+                      <use
+                        href="./images/symbol-defs.svg#icon-linkedin-1"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
+          </div>
         </nav>
-        <div class="header-container">
-          <ul class="contacts list">
-            <li>
-              <a class="contact link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="contact link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </div>        
       </div>
-      </div>
-    </header> 
+    </header>
     <main>
       <section class="portfolio-section">
         <div class="container portfolio-container">
@@ -152,31 +137,53 @@
                         ./images/portfolio1@2x.webp 2x
                       "
                       type="image/webp"
-                      media="(min-width: 1200px)">
+                      media="(min-width: 1200px)"
+                    />
                     <source
                       srcset="
                         ./images/portfolio1.jpg    1x,
-                        ./images/portfolio1@2x.jpg 2x"
-                      type="image/jpeg"  
-                      media="(min-width: 1200px)">
-                    <source srcset="./images/tablet-portfolio1.webp 1x, 
-                    ./images/tablet-portfolio1@2x.webp 2x"
-                    type="image/webp"
-                    media="(min-width: 768px)">
-                    <source srcset="./images/tablet-portfolio1.jpg 1x, 
-                    ./images/tablet-portfolio1@2x.jpg 2x"
-                    type="image/jpeg"
-                    media="(min-width: 768px)">
-                    <source srcset="./images/mobile-portfolio1.webp 1x, ./images/mobile-portfolio1@2x.webp 2x"
-                    type="image/webp"
-                    media="(max-width: 767px)">
-                    <source srcset="./images/mobile-portfolio1.jpg 1x, ./images/mobile-portfolio1@2x.jpg 2x"
-                    type="image/jpeg"
-                    media="(max-width: 767px)">                    
+                        ./images/portfolio1@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-portfolio1.webp    1x,
+                        ./images/tablet-portfolio1@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-portfolio1.jpg    1x,
+                        ./images/tablet-portfolio1@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-portfolio1.webp    1x,
+                        ./images/mobile-portfolio1@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-portfolio1.jpg    1x,
+                        ./images/mobile-portfolio1@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
+                    />
                     <img
                       src="./images/portfolio1.jpg"
                       alt="Banking App Interface Concept"
-                      width="360">
+                      width="360"
+                    />
                   </picture>
                   <div class="hover-block">
                     <p class="hover-text">
@@ -202,31 +209,53 @@
                         ./images/portfolio2@2x.webp 2x
                       "
                       type="image/webp"
-                      media="(min-width: 1200px)">
+                      media="(min-width: 1200px)"
+                    />
                     <source
                       srcset="
                         ./images/portfolio2.jpg    1x,
-                        ./images/portfolio2@2x.jpg 2x"
-                      type="image/jpeg"  
-                      media="(min-width: 1200px)">
-                    <source srcset="./images/tablet-portfolio2.webp 1x, 
-                    ./images/tablet-portfolio2@2x.webp 2x"
-                    type="image/webp"
-                    media="(min-width: 768px)">
-                    <source srcset="./images/tablet-portfolio2.jpg 1x, 
-                    ./images/tablet-portfolio2@2x.jpg 2x"
-                    type="image/jpeg"
-                    media="(min-width: 768px)">
-                    <source srcset="./images/mobile-portfolio2.webp 1x, ./images/mobile-portfolio2@2x.webp 2x"
-                    type="image/webp"
-                    media="(max-width: 768px)">
-                    <source srcset="./images/mobile-portfolio2.jpg 1x, ./images/mobile-portfolio2@2x.jpg 2x"
-                    type="image/jpeg"
-                    media="(max-width: 768px)">                    
+                        ./images/portfolio2@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-portfolio2.webp    1x,
+                        ./images/tablet-portfolio2@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-portfolio2.jpg    1x,
+                        ./images/tablet-portfolio2@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-portfolio2.webp    1x,
+                        ./images/mobile-portfolio2@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-portfolio2.jpg    1x,
+                        ./images/mobile-portfolio2@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 768px)"
+                    />
                     <img
                       src="./images/portfolio2.jpg"
                       alt="Banking App Interface Concept"
-                      width="360">
+                      width="360"
+                    />
                   </picture>
                   <div class="hover-block">
                     <p class="hover-text">
@@ -252,31 +281,54 @@
                         ./images/portfolio3@2x.webp 2x
                       "
                       type="image/webp"
-                      media="(min-width: 1200px)">
+                      media="(min-width: 1200px)"
+                    />
                     <source
                       srcset="
                         ./images/portfolio3.jpg    1x,
-                        ./images/portfolio3@2x.jpg 2x"
-                      type="image/jpeg"  
-                      media="(min-width: 1200px)">
-                    <source srcset="./images/tablet-portfolio3.webp 1x, 
-                    ./images/tablet-portfolio3@2x.webp 2x"
-                    type="image/webp"
-                    media="(min-width: 768px)">
-                    <source srcset="./images/tablet-portfolio3.jpg 1x, 
-                    ./images/tablet-portfolio3@2x.jpg 2x"
-                    type="image/jpeg"
-                    media="(min-width: 768px)">
-                    <source srcset="./images/mobile-portfolio3.webp 1x, ./images/mobile-portfolio3@2x.webp 2x"
-                    type="image/webp"
-                    media="(max-width: 768px)">
-                    <source srcset="./images/mobile-portfolio3.jpg 1x, ./images/mobile-portfolio3@2x.jpg 2x"
-                    type="image/jpeg"
-                    media="(max-width: 768px)">                    
+                        ./images/portfolio3@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-portfolio3.webp    1x,
+                        ./images/tablet-portfolio3@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-portfolio3.jpg    1x,
+                        ./images/tablet-portfolio3@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-portfolio3.webp    1x,
+                        ./images/mobile-portfolio3@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-portfolio3.jpg    1x,
+                        ./images/mobile-portfolio3@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 768px)"
+                    />
                     <img
                       src="./images/portfolio3.jpg"
                       alt="Banking App Interface Concept"
-                      width="360">
+                      width="360"
+                    />
+                  </picture>
                   <div class="hover-block">
                     <p class="hover-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -301,31 +353,54 @@
                         ./images/portfolio4@2x.webp 2x
                       "
                       type="image/webp"
-                      media="(min-width: 1200px)">
+                      media="(min-width: 1200px)"
+                    />
                     <source
                       srcset="
                         ./images/portfolio4.jpg    1x,
-                        ./images/portfolio4@2x.jpg 2x"
-                      type="image/jpeg"  
-                      media="(min-width: 1200px)">
-                    <source srcset="./images/tablet-portfolio4.webp 1x, 
-                    ./images/tablet-portfolio4@2x.webp 2x"
-                    type="image/webp"
-                    media="(min-width: 768px)">
-                    <source srcset="./images/tablet-portfolio4.jpg 1x, 
-                    ./images/tablet-portfolio4@2x.jpg 2x"
-                    type="image/jpeg"
-                    media="(min-width: 768px)">
-                    <source srcset="./images/mobile-portfolio4.webp 1x, ./images/mobile-portfolio4@2x.webp 2x"
-                    type="image/webp"
-                    media="(max-width: 768px)">
-                    <source srcset="./images/mobile-portfolio4.jpg 1x, ./images/mobile-portfolio4@2x.jpg 2x"
-                    type="image/jpeg"
-                    media="(max-width: 768px)">                    
+                        ./images/portfolio4@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-portfolio4.webp    1x,
+                        ./images/tablet-portfolio4@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-portfolio4.jpg    1x,
+                        ./images/tablet-portfolio4@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-portfolio4.webp    1x,
+                        ./images/mobile-portfolio4@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-portfolio4.jpg    1x,
+                        ./images/mobile-portfolio4@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 768px)"
+                    />
                     <img
                       src="./images/portfolio4.jpg"
                       alt="Banking App Interface Concept"
-                      width="360">
+                      width="360"
+                    />
+                  </picture>
                   <div class="hover-block">
                     <p class="hover-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -350,31 +425,54 @@
                         ./images/portfolio5@2x.webp 2x
                       "
                       type="image/webp"
-                      media="(min-width: 1200px)">
+                      media="(min-width: 1200px)"
+                    />
                     <source
                       srcset="
                         ./images/portfolio5.jpg    1x,
-                        ./images/portfolio5@2x.jpg 2x"
-                      type="image/jpeg"  
-                      media="(min-width: 1200px)">
-                    <source srcset="./images/tablet-portfolio5.webp 1x, 
-                    ./images/tablet-portfolio5@2x.webp 2x"
-                    type="image/webp"
-                    media="(min-width: 768px)">
-                    <source srcset="./images/tablet-portfolio5.jpg 1x, 
-                    ./images/tablet-portfolio5@2x.jpg 2x"
-                    type="image/jpeg"
-                    media="(min-width: 768px)">
-                    <source srcset="./images/mobile-portfolio5.webp 1x, ./images/mobile-portfolio5@2x.webp 2x"
-                    type="image/webp"
-                    media="(max-width: 768px)">
-                    <source srcset="./images/mobile-portfolio5.jpg 1x, ./images/mobile-portfolio5@2x.jpg 2x"
-                    type="image/jpeg"
-                    media="(max-width: 768px)">                    
+                        ./images/portfolio5@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-portfolio5.webp    1x,
+                        ./images/tablet-portfolio5@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-portfolio5.jpg    1x,
+                        ./images/tablet-portfolio5@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-portfolio5.webp    1x,
+                        ./images/mobile-portfolio5@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-portfolio5.jpg    1x,
+                        ./images/mobile-portfolio5@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 768px)"
+                    />
                     <img
                       src="./images/portfolio5.jpg"
                       alt="Banking App Interface Concept"
-                      width="360">
+                      width="360"
+                    />
+                  </picture>
                   <div class="hover-block">
                     <p class="hover-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -399,31 +497,54 @@
                         ./images/portfolio6@2x.webp 2x
                       "
                       type="image/webp"
-                      media="(min-width: 1200px)">
+                      media="(min-width: 1200px)"
+                    />
                     <source
                       srcset="
                         ./images/portfolio6.jpg    1x,
-                        ./images/portfolio6@2x.jpg 2x"
-                      type="image/jpeg"  
-                      media="(min-width: 1200px)">
-                    <source srcset="./images/tablet-portfolio6.webp 1x, 
-                    ./images/tablet-portfolio6@2x.webp 2x"
-                    type="image/webp"
-                    media="(min-width: 768px)">
-                    <source srcset="./images/tablet-portfolio6.jpg 1x, 
-                    ./images/tablet-portfolio6@2x.jpg 2x"
-                    type="image/jpeg"
-                    media="(min-width: 768px)">
-                    <source srcset="./images/mobile-portfolio6.webp 1x, ./images/mobile-portfolio6@2x.webp 2x"
-                    type="image/webp"
-                    media="(max-width: 768px)">
-                    <source srcset="./images/mobile-portfolio6.jpg 1x, ./images/mobile-portfolio6@2x.jpg 2x"
-                    type="image/jpeg"
-                    media="(max-width: 768px)">                    
+                        ./images/portfolio6@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-portfolio6.webp    1x,
+                        ./images/tablet-portfolio6@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-portfolio6.jpg    1x,
+                        ./images/tablet-portfolio6@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-portfolio6.webp    1x,
+                        ./images/mobile-portfolio6@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-portfolio6.jpg    1x,
+                        ./images/mobile-portfolio6@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 768px)"
+                    />
                     <img
                       src="./images/portfolio6.jpg"
                       alt="Banking App Interface Concept"
-                      width="360">
+                      width="360"
+                    />
+                  </picture>
                   <div class="hover-block">
                     <p class="hover-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -448,31 +569,54 @@
                         ./images/portfolio7@2x.webp 2x
                       "
                       type="image/webp"
-                      media="(min-width: 1200px)">
+                      media="(min-width: 1200px)"
+                    />
                     <source
                       srcset="
                         ./images/portfolio7.jpg    1x,
-                        ./images/portfolio7@2x.jpg 2x"
-                      type="image/jpeg"  
-                      media="(min-width: 1200px)">
-                    <source srcset="./images/tablet-portfolio7.webp 1x, 
-                    ./images/tablet-portfolio7@2x.webp 2x"
-                    type="image/webp"
-                    media="(min-width: 768px)">
-                    <source srcset="./images/tablet-portfolio7.jpg 1x, 
-                    ./images/tablet-portfolio2@2x.jpg 2x"
-                    type="image/jpeg"
-                    media="(min-width: 768px)">
-                    <source srcset="./images/mobile-portfolio7.webp 1x, ./images/mobile-portfolio7@2x.webp 2x"
-                    type="image/webp"
-                    media="(max-width: 768px)">
-                    <source srcset="./images/mobile-portfolio7.jpg 1x, ./images/mobile-portfolio7@2x.jpg 2x"
-                    type="image/jpeg"
-                    media="(max-width: 768px)">                    
+                        ./images/portfolio7@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-portfolio7.webp    1x,
+                        ./images/tablet-portfolio7@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-portfolio7.jpg    1x,
+                        ./images/tablet-portfolio2@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-portfolio7.webp    1x,
+                        ./images/mobile-portfolio7@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-portfolio7.jpg    1x,
+                        ./images/mobile-portfolio7@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 768px)"
+                    />
                     <img
                       src="./images/portfolio7.jpg"
                       alt="Banking App Interface Concept"
-                      width="360">
+                      width="360"
+                    />
+                  </picture>
                   <div class="hover-block">
                     <p class="hover-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -497,31 +641,54 @@
                         ./images/portfolio8@2x.webp 2x
                       "
                       type="image/webp"
-                      media="(min-width: 1200px)">
+                      media="(min-width: 1200px)"
+                    />
                     <source
                       srcset="
                         ./images/portfolio8.jpg    1x,
-                        ./images/portfolio8@2x.jpg 2x"
-                      type="image/jpeg"  
-                      media="(min-width: 1200px)">
-                    <source srcset="./images/tablet-portfolio8.webp 1x, 
-                    ./images/tablet-portfolio8@2x.webp 2x"
-                    type="image/webp"
-                    media="(min-width: 768px)">
-                    <source srcset="./images/tablet-portfolio8.jpg 1x, 
-                    ./images/tablet-portfolio8@2x.jpg 2x"
-                    type="image/jpeg"
-                    media="(min-width: 768px)">
-                    <source srcset="./images/mobile-portfolio8.webp 1x, ./images/mobile-portfolio8@2x.webp 2x"
-                    type="image/webp"
-                    media="(max-width: 768px)">
-                    <source srcset="./images/mobile-portfolio8.jpg 1x, ./images/mobile-portfolio8@2x.jpg 2x"
-                    type="image/jpeg"
-                    media="(max-width: 768px)">                    
+                        ./images/portfolio8@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-portfolio8.webp    1x,
+                        ./images/tablet-portfolio8@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-portfolio8.jpg    1x,
+                        ./images/tablet-portfolio8@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-portfolio8.webp    1x,
+                        ./images/mobile-portfolio8@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-portfolio8.jpg    1x,
+                        ./images/mobile-portfolio8@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 768px)"
+                    />
                     <img
                       src="./images/portfolio8.jpg"
                       alt="Banking App Interface Concept"
-                      width="360">
+                      width="360"
+                    />
+                  </picture>
                   <div class="hover-block">
                     <p class="hover-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -546,31 +713,53 @@
                         ./images/portfolio9@2x.webp 2x
                       "
                       type="image/webp"
-                      media="(min-width: 1200px)">
+                      media="(min-width: 1200px)"
+                    />
                     <source
                       srcset="
                         ./images/portfolio9.jpg    1x,
-                        ./images/portfolio9@2x.jpg 2x"
-                      type="image/jpeg"  
-                      media="(min-width: 1200px)">
-                    <source srcset="./images/tablet-portfolio9.webp 1x, 
-                    ./images/tablet-portfolio9@2x.webp 2x"
-                    type="image/webp"
-                    media="(max-width: 1199px)">
-                    <source srcset="./images/tablet-portfolio9.jpg 1x, 
-                    ./images/tablet-portfolio9@2x.jpg 2x"
-                    type="image/jpeg"
-                    media="(max-width: 1199px)">
-                    <source srcset="./images/mobile-portfolio9.webp 1x, ./images/mobile-portfolio9@2x.webp 2x"
-                    type="image/webp"
-                    media="(max-width: 768px)">
-                    <source srcset="./images/mobile-portfolio9.jpg 1x, ./images/mobile-portfolio9@2x.jpg 2x"
-                    type="image/jpeg"
-                    media="(max-width: 768px)">                    
+                        ./images/portfolio9@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-portfolio9.webp    1x,
+                        ./images/tablet-portfolio9@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-portfolio9.jpg    1x,
+                        ./images/tablet-portfolio9@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-portfolio9.webp    1x,
+                        ./images/mobile-portfolio9@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile-portfolio9.jpg    1x,
+                        ./images/mobile-portfolio9@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 768px)"
+                    />
                     <img
                       src="./images/portfolio9.jpg"
                       alt="Banking App Interface Concept"
-                      >
+                    />
+                  </picture>
                   <div class="hover-block">
                     <p class="hover-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -656,7 +845,7 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
-     <script
+    <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
