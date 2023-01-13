@@ -297,7 +297,6 @@ input[type="email"]::placeholder {
   transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 24px;
 }
 
 .close-modal:active {
@@ -562,9 +561,9 @@ textarea {
     display: none;
   }
 
-  .header {
+  /* .header {
     position: relative;
-  }
+  } */
 
   .section {
     padding: 96px 0 96px 0;
@@ -572,7 +571,9 @@ textarea {
 
   .menu-svg,
   .close-menu {
-    fill: currentColor;
+    display: flex;
+    width: 8px;
+    height: 8px;
   }
 
   .portfolio-mobile {
@@ -592,24 +593,21 @@ textarea {
     color: var(--text);
   }
 
-  .close-menu {
-    width: 24px;
-    height: 24px;
+  .mobile-close-btn {
     position: absolute;
     top: 40px;
     right: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--accent);
+    background-color: var(--accent);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    padding: 8px;
+    padding: 8px 8px;
     cursor: pointer;
     transition-property: background-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    margin-bottom: 24px;
   }
 
   .menu-svg {
@@ -629,19 +627,22 @@ textarea {
   }
 
   .container {
-    min-width: 320px;
-    max-width: 767px;
-    width: 100%;
-    padding: 24px 16px;
+    /* min-width: 320px;
+    max-width: 767px; */
+    width: 480px;
+    padding: 0 16px;
     margin-left: auto;
     margin-right: auto;
   }
 
+  .header {
+  }
+
   .header .container {
-    height: 70px;
     display: flex;
-    /* align-items: center;
-  justify-content: flex-end; */
+    height: 70px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   picture {
@@ -712,7 +713,6 @@ textarea {
   }
   .paragraph {
     margin-top: 8px;
-    margin-bottom: 8px;
   }
   .advantages-section-title {
     font-size: 36px;
@@ -731,6 +731,7 @@ textarea {
     gap: 24px;
     width: 232px;
     height: 48px;
+    margin-top: 8px;
   }
   .social-media-item {
     display: flex;
@@ -788,6 +789,7 @@ textarea {
 
   .customers-link {
     display: flex;
+    width: 190px;
     align-items: center;
     justify-content: center;
     border: 1px solid var(--subtletext);
@@ -806,9 +808,9 @@ textarea {
   }
   .customers-svg {
     display: flex;
-
     fill: currentColor;
-    padding: 16px 32px;
+    width: 104px;
+    height: 56px;
   }
 
   .footer {
@@ -865,12 +867,6 @@ textarea {
     margin-bottom: 16px;
   }
 
-  @media (max-width: 767px) {
-    /* .menu {
-      display: none;
-    } */
-  }
-
   .menu .link {
     padding: 10px;
     color: inherit;
@@ -882,7 +878,7 @@ textarea {
     text-decoration: underline;
   }
 
-  .menu-toggle {
+  .menu-toggle.mobile-open-btn {
     min-height: 40px;
     min-width: 40px;
     display: flex;
@@ -943,13 +939,6 @@ textarea {
     transform: translateX(0);
   }
 
-  .menu-container .menu-toggle {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    color: #fff;
-  }
-
   .contacts-mobile {
     display: flex;
     flex-direction: column;
@@ -966,7 +955,7 @@ textarea {
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: space-around;
+    gap: 56px;
   }
   .mobile-menu {
     padding: 0;
@@ -993,7 +982,7 @@ textarea {
     background-position: 50% 50%;
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding: 192px 0 192px 0;
+    padding: 112px 0 112px 0;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1013,7 +1002,8 @@ textarea {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    row-gap: 72px;
+    column-gap: 16px;
   }
 
   .customers-link {
@@ -1023,13 +1013,17 @@ textarea {
 
   .customers-svg {
     display: flex;
-
+    width: 104px;
+    height: 56px;
     fill: currentColor;
-    padding: 16px 40px;
   }
 
   .filter {
     flex-wrap: wrap;
+  }
+
+  .portfolio-section {
+    padding: 48px 0;
   }
 
   .portfolio-item {
@@ -1075,20 +1069,23 @@ textarea {
     padding: 96px 0 96px 0;
   }
 
-  .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-    height: 70px;
-    padding: 24px 16px 24px 16px;
+  .container {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
-  .container.main-nav {
+  .header {
+  }
+
+  .header .container {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    min-width: 768px;
+    height: 70px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    /* margin: 0; */
   }
 
   .menu-container {
@@ -1109,14 +1106,12 @@ textarea {
     line-height: 1.33;
     color: var(--text);
   }
-  .webstudio {
-    margin-left: 16px;
-  }
 
   .header-nav {
     display: flex;
     align-items: center;
   }
+
   .webstudio,
   .web-studio {
     font-family: Raleway, sans-serif;
@@ -1213,14 +1208,14 @@ textarea {
         RGBA(47, 48, 58, 0.7),
         RGBA(47, 48, 58, 0.7)
       ),
-      url(../images/people-office-mobile.jpg);
+      url(../images/people-office-tablet.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 767px;
+    max-width: 1199px;
     background-position: 50% 50%;
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    padding: 192px 0 192px 0;
+    padding: 112px 0 112px 0;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1243,7 +1238,7 @@ textarea {
     margin: 40px auto auto auto;
   }
   .advantages-section {
-    padding: 96px 16px;
+    padding: 96px 0 96px 0;
   }
 
   .advantages-section-title {
@@ -1271,8 +1266,10 @@ textarea {
   .team {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 56px;
   }
 
   .team-section {
@@ -1295,7 +1292,6 @@ textarea {
   }
   .paragraph {
     margin-top: 8px;
-    margin-bottom: 8px;
   }
 
   .social-media {
@@ -1304,6 +1300,7 @@ textarea {
     gap: 24px;
     width: 232px;
     height: 48px;
+    margin-top: 8px;
   }
   .social-media-item {
     display: flex;
@@ -1335,7 +1332,7 @@ textarea {
   .team-section,
   .customers-section,
   .footer-container {
-    padding: 96px 108px;
+    padding: 96px 0 96px 0;
   }
 
   .secondary-title {
@@ -1357,6 +1354,7 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     row-gap: 72px;
     column-gap: 24px;
   }
@@ -1368,10 +1366,11 @@ textarea {
 
   .customers-link {
     display: flex;
+    width: 168px;
     align-items: center;
     justify-content: center;
     height: 88px;
-    max-width: 166px;
+    /* max-width: 166px; */
     border: 1px solid var(--subtletext);
     color: var(--subtletext);
     border-radius: 4px;
@@ -1388,14 +1387,11 @@ textarea {
   }
   .customers-svg {
     display: flex;
-
+    width: 104px;
+    height: 56px;
     fill: currentColor;
-    padding: 16px 32px;
   }
 
-  .footer {
-    padding: 0;
-  }
   .footer-info {
     width: 264px;
   }
@@ -1408,6 +1404,8 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
+    margin: 0 auto;
+    padding: 0 108px;
   }
 
   .social-media-footer {
@@ -1479,7 +1477,7 @@ textarea {
   }
 
   .portfolio-section {
-    padding: 64px 16px 96px 16px;
+    padding: 64px 0 96px 0;
   }
 
   .filter {
@@ -1510,7 +1508,7 @@ textarea {
     display: block;
   }
   .container {
-    max-width: 1158px;
+    width: 1200px;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
@@ -1544,9 +1542,13 @@ textarea {
   .portfolio-section {
     padding: 96px 0 120px 0;
   }
-  .header {
+
+  .header .container {
+    display: flex;
     height: 72px;
-    padding: 24px 0 24px 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    /* margin: 0; */
   }
 
   .main-nav {
@@ -1635,8 +1637,7 @@ textarea {
   }
 
   .footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 0;
   }
 
   .footer-container {
@@ -1645,6 +1646,7 @@ textarea {
   }
   .footer-block {
     min-width: 264px;
+    margin: 0;
   }
   .social-media-footer {
     margin-left: 120px;
