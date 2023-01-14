@@ -1042,9 +1042,6 @@ textarea {
     margin: 0;
   }
 
-
-  }
-
   .button {
     padding: 4px 16px 4px 16px;
   }
@@ -1490,7 +1487,7 @@ textarea {
   .portfolio {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
     row-gap: 72px;
     column-gap: 24px;
   }
@@ -1535,7 +1532,7 @@ textarea {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
   }
   .portfolio {
     margin-top: 72px;
